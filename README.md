@@ -11,7 +11,7 @@ Simple Api calls using Axios.
 <li>Remove items from cart</li>
 <li>Edit the quantity of the items in real time</li>
 <li>Calculate automatically the total per movie and overall total</li>
-<li>View Product Details in a modal (Getting data from [omDB](https://www.omdbapi.com/) through axios)</li>
+<li>View Product Details in a modal - Fetching data from [omDB](https://www.omdbapi.com/) through axios</li>
 <li>Routing using React-router-dom (Used HostRouter only for gh-pages otherwise use BrowserRouter to avoid # at the end of url)</li>
 <li>Working filters on Product list.</li>
 
