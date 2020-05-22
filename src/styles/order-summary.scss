@@ -1,0 +1,15 @@
+.order-summary {
+  color: #1e1b4d;
+  text-align: right;
+  .title {
+    font-size: 80px;
+    font-weight: 200;
+    line-height: 1.15;
+  }
+  .total {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.15;
+    margin-top: 60px;
+  }
+}

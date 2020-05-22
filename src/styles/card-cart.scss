@@ -1,0 +1,75 @@
+.card-cart{
+    box-shadow: 0 10px 100px rgba(0,0,0,0.2);
+    margin: 20px 0;
+    background-color: white;
+    position: relative;
+    .remove-btn{
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: #d6e2f6;
+        border: 0;
+        color: red;
+        font-weight: 600;
+        font-size: 15px;
+        padding: 0px 5px;
+        border-radius: 0;
+        text-transform: capitalize;
+        box-shadow: none;
+    }
+    .card-image{
+        background-color: #d6e2f6;
+        img{
+            height: 150px;
+            width: 100%;
+            object-fit: cover;
+            padding: 20px 0;
+        }
+    }
+    .card-info{
+        .card-title{
+            font-weight: 600;
+            padding: 10px 0 5px 0;
+            color: #2e2f63;
+            margin-bottom: 0;
+        }
+        .card-meta{
+            padding: 0;
+            font-size: 13px;
+            color: #838485;
+            li{
+                display: inline-block;
+                text-transform: capitalize;
+                padding-right: 10px;
+            }
+        }
+        .qi-wrapper{
+            padding-top: 10px;
+            .quantity{
+                border: 2px solid #9ea0d9;
+                border-radius: 3px;
+                color: #2e2f63;
+                font-size: 14px;
+                font-weight: 600;
+                padding: 0 0 0 10px;
+                width: fit-content;
+                button{
+                    background: none;
+                    border: 0;
+                    color: #2e2f63;
+                    font-size: 20px;
+                    padding: 0 10px;  
+                    box-shadow: none; 
+                }
+            }
+            .price{
+                color: #2e2f63;
+                font-size: 19px;
+                font-weight: 700;
+                padding: 3px 35px 0 0;
+                text-align: right;
+            }
+        }
+    }
+}

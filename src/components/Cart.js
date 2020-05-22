@@ -2,35 +2,42 @@ import React, { Component } from 'react';
 import { Container } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import { addToCart, removeProduct, decreaseQuantity } from './actions/actions';
-import { Card, Button, Col, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
+import CartCard from './CartCard';
+import '../styles/order-summary.scss';
 
 class Cart extends Component {
+
+
     state = {}
+    handleAddToCart(id) {
+        console.log("handling", id);
+
+        this.props.addToCart(id);
+    }
+
+
     render() {
-
-        let addedItems = this.props.items.map(item => {
-            return (
-                <Col lg={12} key={item.imdbID} id={item.imdbID}>
-                    <Card style={{ margin: 10 }}>
-                        <Card.Img style={{ height: 250 }} variant="top" src={item.Poster} />
-                        <Card.Body>
-                            <Card.Title>{item.Title}</Card.Title>
-                            <Card.Text style={{ textTransform: 'capitalize' }}>
-                                {item.Type}
-                                <br></br>
-                                {item.Year}
-                            </Card.Text>
-                            <Button variant="primary" onClick={() => this.handleAdd(item.imdbID)}>Add To Cart</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-            );
-        })
-
+        console.log(this.props.items);
         return (
             <Container>
                 <Row>
-                    {addedItems}
+                    <Col lg={6}>
+                        {
+                            this.props.items.map(item => (
+                                <CartCard key={item.imdbID} item={item} addToCart={(id) => this.handleAddToCart(id)} decreaseQuantity={(id) => this.props.decreaseQuantity(id)} removeProduct={(id) => this.props.removeProduct(id)} />
+                            ))
+                        }
+                    </Col>
+                    <Col lg={6} className="order-summary">
+                        <div className="title">
+                            <div>Order</div>
+                            <div>Summary</div>
+                        </div>
+                        <div className="total">
+                            Total: &nbsp;{this.props.total} INR
+                        </div>
+                    </Col>
                 </Row>
             </Container>
         );

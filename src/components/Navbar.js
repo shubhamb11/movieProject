@@ -2,7 +2,8 @@ import React from 'react';
 import { Nav, NavDropdown, Navbar } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import { filterCats } from './actions/actions';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { ReactComponent as CartLogo } from '../styles/icons/shopping-cart.svg';
 
 const NavBar = (props) => {
     const handleCategory = (itemType) => {
@@ -21,12 +22,13 @@ const NavBar = (props) => {
                 <NavDropdown.Item key={item.Type} style={{ textTransform: "capitalize" }} onClick={() => handleCategory(item.Type)}>{item.Type}</NavDropdown.Item>
             );
         }
+        return categories;
     });
 
 
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
-            <Navbar.Brand href="/">Movies</Navbar.Brand>
+            <Link to="/"><Navbar.Brand>Movies</Navbar.Brand></Link>
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
                 </Nav>
@@ -35,8 +37,9 @@ const NavBar = (props) => {
                         <NavDropdown.Item onClick={() => handleCategory('all')}>All</NavDropdown.Item>
                         {categories}
                     </NavDropdown>
-                    <Link to="/cart">
-                        {props.cartLength} in Cart
+                    <Link to="/cart"><Navbar.Brand style={{ position: "relative" }}>
+                        <CartLogo /><span className="cart-logo">{props.cartLength}</span>
+                    </Navbar.Brand>
                     </Link>
                 </Nav>
             </Navbar.Collapse>
