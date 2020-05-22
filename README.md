@@ -6,13 +6,14 @@ Simple Api calls using Axios.
 [Here](https://shubhamb11.github.io/movieProject/)
 
 ## Features
-Add items<br />
-Count on cart icon showing total unique product added in the cart<br />
-Remove items from cart<br />
-Edit the quantity of the items in real time<br />
-Calculate automatically the total per movie and overall total<br />
-View Product Details in a modal (Getting data from [omDB](http://www.omdbapi.com/) through axios)<br />
-Routing using React-router-dom (Used HostRouter only for gh-pages otherwise use BrowserRouter to avoid # at the end of url)<br />
+<li>Add items</li>
+<li>Count on cart icon showing total unique product added in the cart</li>
+<li>Remove items from cart</li>
+<li>Edit the quantity of the items in real time</li>
+<li>Calculate automatically the total per movie and overall total</li>
+<li>View Product Details in a modal (Getting data from [omDB](http://www.omdbapi.com/) through axios)</li>
+<li>Routing using React-router-dom (Used HostRouter only for gh-pages otherwise use BrowserRouter to avoid # at the end of url)</li>
+<li>Working filters on Product list.</li>
 
 ## Getting Started
 
