@@ -20,7 +20,7 @@ class ProductView extends Component {
     async handleAxiosCall() {
         try {
             const res = await axios.get(
-                "http://omdbapi.com/?apikey=f5efb081&i=" + this.props.id
+                "https://omdbapi.com/?apikey=f5efb081&i=" + this.props.id
             );
             return await res.data;
         } catch (error) {
