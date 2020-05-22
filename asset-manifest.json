@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/movieProject/static/css/main.51bf53e2.chunk.css",
+    "main.js": "/movieProject/static/js/main.29e16eac.chunk.js",
+    "main.js.map": "/movieProject/static/js/main.29e16eac.chunk.js.map",
+    "runtime-main.js": "/movieProject/static/js/runtime-main.5c94548b.js",
+    "runtime-main.js.map": "/movieProject/static/js/runtime-main.5c94548b.js.map",
+    "static/js/2.c6dad32c.chunk.js": "/movieProject/static/js/2.c6dad32c.chunk.js",
+    "static/js/2.c6dad32c.chunk.js.map": "/movieProject/static/js/2.c6dad32c.chunk.js.map",
+    "index.html": "/movieProject/index.html",
+    "precache-manifest.7fe2492fd840ce7c90598335c19ca761.js": "/movieProject/precache-manifest.7fe2492fd840ce7c90598335c19ca761.js",
+    "service-worker.js": "/movieProject/service-worker.js",
+    "static/css/main.51bf53e2.chunk.css.map": "/movieProject/static/css/main.51bf53e2.chunk.css.map",
+    "static/js/2.c6dad32c.chunk.js.LICENSE.txt": "/movieProject/static/js/2.c6dad32c.chunk.js.LICENSE.txt",
+    "static/media/shopping-cart.630af401.svg": "/movieProject/static/media/shopping-cart.630af401.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5c94548b.js",
+    "static/js/2.c6dad32c.chunk.js",
+    "static/css/main.51bf53e2.chunk.css",
+    "static/js/main.29e16eac.chunk.js"
+  ]
+}
